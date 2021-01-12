@@ -138,13 +138,3 @@ function Home() {
 
 export default Home;
 
-{/* <div style={{ fontSize:"50px", color:"red"}}>
-<h1>Welcome to C3 Physical Therapy,
-<br></br>
-Health & Wellness Services
-</h1>
-<p> We are a MOBILE Outpatient Physical Therapy and Wellness Practice.
-<br></br>
-WE COME to you, WHEN you want it, WHERE you want it!
-</p>
-</div> */}
