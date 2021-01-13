@@ -6,7 +6,7 @@ import gabby from "./Images/gabby.jpg";
 import points from "./Images/points.jpg";
 import hand from "./Images/hand.jpg"
 import {Carousel, Card} from "react-bootstrap";
-
+import {Container, Col, Row} from "react-bootstrap"
 
 function Home() {
     return (
@@ -56,8 +56,11 @@ function Home() {
 </div>
 <div style={{backgroundColor:"lightblue"}}>
 
-<div style={{display:"inline-flex" }}>
-    <div  style={{display:"inline-flex", paddingRight:"250px"}}>
+
+<Container fluid="sm"  >
+  <Row>
+    <Col><div style={{display:"inline-flex" }}>
+    <div>
     <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={gabby} height={200} />
   <Card.Body>
@@ -76,7 +79,9 @@ function Home() {
   </Card.Body>
 </Card>
   </div>
-  <div  style={{display:"inline-flex", paddingRight:"200px"}}>
+
+</div></Col>
+    <Col>  <div>
     <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={hand} height={200} />
   <Card.Body>
@@ -98,11 +103,10 @@ function Home() {
     </Card.Text>
   </Card.Body>
 </Card>
-</div>
+</div></Col>
 
 
-
-<div  style={{display:"inline-flex", paddingLeft:"125px"}}>
+    <Col><div>
     <Card style={{ width: '18rem' ,  backgroundColor:"skyblue"}}>
   <Card.Img variant="top" src={points} height={200} />
   <Card.Body>
@@ -122,9 +126,11 @@ function Home() {
     </Card.Text>
   </Card.Body>
 </Card>
-</div>
- 
-</div>
+</div></Col>
+  </Row>
+</Container>  
+
+
   
 
 

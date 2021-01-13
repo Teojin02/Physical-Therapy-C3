@@ -4,12 +4,17 @@ import band from "./Images/band.jpg";
 import old from "./Images/old.jpg";
 import gabby from "./Images/gabby.jpg";
 import points from "./Images/points.jpg";
-import hand from "./Images/hand.jpg"
-import {Card, ListGroup, ListGroupItem} from 'react-bootstrap'
+import hand from "./Images/hand.jpg";
+import {Card, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Container, Col, Row} from "react-bootstrap";
+
+
 function Services() {
     return (
     <div>
-
+<Container fluid="md">
+  <Row>
+    <Col>
    <div style={{display:"inline-flex"}}>
      <Card style={{ width: '18rem', backgroundColor:"skyblue"  }}>
   <Card.Img variant="top" src={back} height={200} />
@@ -27,9 +32,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex", padding:"25px"}}>
+    <Col>        <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={band} height={200} />
   <Card.Body>
@@ -45,9 +50,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex" }}>
+    <Col>  <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={gabby} height={200} />
   <Card.Body>
@@ -63,9 +68,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex" , padding:"25px"}}>
+    <Col>       <div >
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={hand} height={200} />
   <Card.Body>
@@ -81,9 +86,10 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex"}}>
+    <Col>
+        <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={old} height={200} />
   <Card.Body>
@@ -100,9 +106,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex" , padding:"25px"}}>
+    <Col>        <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={points} height={200} />
   <Card.Body>
@@ -119,9 +125,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex" , padding:"25px"}}>
+    <Col>        <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={back} height={200} />
   <Card.Body>
@@ -138,9 +144,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex"}}>
+    <Col>  <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={band} height={200} />
   <Card.Body>
@@ -159,9 +165,9 @@ function Services() {
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
 
-        <div style={{display:"inline-flex"}}>
+    <Col>     <div>
      <Card style={{ width: '18rem',  backgroundColor:"skyblue" }}>
   <Card.Img variant="top" src={band} height={200} />
   <Card.Body>
@@ -179,7 +185,10 @@ stretching
   <Card.Body>
   </Card.Body>
 </Card>
-        </div>
+        </div></Col>
+
+  </Row>
+</Container>
     </div>
  
 
