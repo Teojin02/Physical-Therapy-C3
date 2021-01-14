@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Redirect, Switch } from "react-router-dom";
 import { attemptGetUser } from "./store/thunks/user";
-import Titletop from "./components/views/TitleTop"
+import Titletop from "./components/views/TitleTop";
 import {
   ConfirmPage,
+  Appointment,
   Home,
   Services,
   Products,
@@ -45,6 +46,7 @@ export default function App() {
         <Route path='/News' exact component={News} />
         <Route path='/About' exact component={About} />
         <Route path='/More' exact component={More} />
+        <Route path='/Appointment' exact component={Appointment} />
         <ProtectedRoute path='/my-profile' exact component={Profile} />
         <Route path='/account/confirm/:token' exact component={ConfirmPage} />
         <Route path='/register' exact component={Register} />

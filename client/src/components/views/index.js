@@ -12,9 +12,11 @@ import Products from "./Products"
 import News from "./News";
 import About from "./About";
 import More from "./More";
+import Appointment from "./Appointment"
 
 export {
   ConfirmPage,
+  Appointment,
   Home,
   Services,
   Products,

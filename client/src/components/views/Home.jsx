@@ -7,7 +7,7 @@ import points from "./Images/points.jpg";
 import hand from "./Images/hand.jpg"
 import {Carousel, Card} from "react-bootstrap";
 import {Container, Col, Row} from "react-bootstrap"
-
+import Yoli from "./Yoli"
 function Home() {
     return (
         <div>
@@ -150,13 +150,10 @@ function Home() {
 </div></Col>
   </Row>
 </Container>  
+<div>
 
-
-  
-
-
-
-
+</div>
+<Yoli></Yoli>
 </div>
 
         </div>
